@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Detailed Design | Saibai Island Food System</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <header class="subpage-hero">
+    <div class="hero-content">
+      <h1>Detailed Design</h1>
+      <p>Describe the technical and operational details that bring the Saibai Island food system to life.</p>
+    </div>
+  </header>
+
+  <nav>
+    <div class="nav-inner">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="project-details.html">Project Details</a></li>
+        <li><a href="background.html">Background</a></li>
+        <li><a href="solution.html">Solution Overview</a></li>
+        <li><a href="detailed-design.html" class="active">Detailed Design</a></li>
+        <li><a href="prototype.html">Prototype</a></li>
+        <li><a href="implementation-plan.html">Implementation Plan</a></li>
+        <li><a href="cost-analysis.html">Cost Analysis</a></li>
+        <li><a href="additional-considerations.html">Additional Considerations</a></li>
+        <li><a href="recommendations.html">Recommendations</a></li>
+        <li><a href="acknowledgements.html">Acknowledgements</a></li>
+        <li><a href="references.html">References</a></li>
+        <li><a href="supporting-documents.html">Supporting Documents</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <main>
+    <section>
+      <h2>System Architecture</h2>
+      <figure class="media-frame">
+        <img src="images/p1.jpg"
+          alt="Render of the Saibai Island food precinct layout with four raised-bed quadrants and central aquaponic core.">
+        <figcaption>Site layout illustrating production zones, aquaponic infrastructure, circulation paths, and service
+          clusters tailored for Saibai (KFC Project Team, 2025).</figcaption>
+      </figure>
+      <p>The precinct is organised around four elevated crop zones separated by gravel access paths. Each quadrant
+        contains three crop bands fed by drip irrigation lines supplied from a shared aquaponic loop. Sub-grade membrane
+        liners insulate root zones from saline groundwater while allowing controlled drainage into recovery channels. A
+        central operations spine houses fish tanks, filtration equipment, feed storage, and a refrigerated packing room
+        to ensure uninterrupted cold chain distribution (KFC Project Team, 2025; Torres Strait Island Regional Council,
+        2024).</p>
+      <p>Water captured from greenhouse roofs and shade structures is stored in modular tanks before passing through a
+        sediment filter, UV steriliser, and mineral dosing unit. Solar-powered pumps circulate water through fish tanks,
+        biofilters, and plant beds. Overflow is returned to settlement ponds for aeration and, when necessary, is
+        blended with harvested rainwater to maintain quality. A battery-backed photovoltaic system powers pumps,
+        monitoring devices, and cold storage, while a diesel standby connection provides redundancy during prolonged
+        cloud cover (Australian Energy Regulator, 2025; Ergon Energy, n.d.).</p>
+    </section>
+
+    <section id="meets-needs">
+      <h2>How the design meets TSIRC &amp; Saibai needs</h2>
+
+      <h3>Stable, Safe &amp; Accepted Supply</h3>
+      <p>Starting from weeks <strong>6-8</strong>, the system establishes a consistent weekly supply of <strong>6-10
+          kg</strong> of vegetables—primarily leafy greens and herbs commonly consumed by the community—together with a
+        small yet steady supplement of fish at conservative stocking densities. We maintain unit costs at
+        <strong>70-85%</strong> of local retail prices for comparable products, thereby reducing overall expenses. To
+        ensure food safety, on-site facilities include tool-disinfection stations and hand-washing points; seeds and
+        seedlings undergo entry checks, and any anomalies plus maintenance records are posted publicly (Department of
+        Agriculture, Fisheries and Forestry, 2023, 2025). Output follows a <strong>small-batch, high-frequency</strong>
+        weekly rhythm aligned with household cooking and school meals, enabling planned consumption and budgeting. Three
+        supporting ledgers—harvest records, price comparisons, and distribution logs—turn “stable and affordable supply”
+        into a verifiable commitment (Torres Strait Island Regional Council, 2025a; Engineers Without Borders Australia,
+        2025).</p>
+
+      <h3>Resource Efficiency and Low-Cost Operation</h3>
+      <p>Addressing Saibai's freshwater scarcity and high electricity costs, the system prioritizes
+        <strong>rainwater-first</strong> recirculation, targeting <strong>25-40 L/kg</strong> total water intensity.
+        With <strong>low-head pumps</strong>, <strong>scheduled operation</strong>, and <strong>short pipe
+          runs</strong>, energy intensity is held at <strong>0.25-0.60 kWh/kg</strong> (Torres Strait Island Regional
+        Council, 2025b; Ergon Energy, n.d.). We publish a monthly <em>Water Balance</em> and maintain a weekly
+        <em>Electricity Log</em>, clearly showing replenishment, evaporation, recovery, and load curves to support TSIRC
+        budgeting and optimization (Torres Strait Island Regional Council, 2025b). Engineering optimization reduces base
+        load so a small PV add-on can later offset most consumption; initial grid-connected operation keeps bills down
+        while enabling scalable upgrades—avoiding large upfront CAPEX and balancing present feasibility with future
+        improvements (Australian Energy Regulator, 2025; Ergon Energy, n.d.). Climate and evaporation assumptions
+        reference nearby stations and regional datasets as boundary conditions (Bureau of Meteorology, 2025; Time and
+        Date, n.d.; eAtlas, 2016/2024).</p>
+
+      <h3>Rugged, Low-Maintenance, and Repairable</h3>
+      <p>Saibai frequently faces downpours, king tides, and short outages, so the layout is raised with overflow
+        recovery and splash-proof shading to handle heat and spray. Before claiming robustness, we conduct two drills: a
+        <strong>48-hour blackout</strong> and a <strong>storm scenario with salinity intrusion</strong>. Acceptance
+        criteria are clear—dissolved oxygen remains within safe limits, water quality recovers within <strong>24
+          h</strong>, and fish mortality is zero or negligible (Torres Strait Island Regional Council, 2024; Australian
+        Energy Regulator, 2025). Routine effort is <strong>≤7 h/week</strong> (feeding, transplanting, harvesting,
+        filter cleaning, logging) under concise SOPs to ensure seamless handovers. Critical components are standardized
+        with on-site universal spares, targeting <strong>MTTR ≤24 h</strong> to suit an isolated-grid context and
+        shipping realities (Ergon Energy, n.d.). Governance is practical: TSIRC oversight, a local operations team for
+        daily tasks, and a system steward for training and data aggregation. SOPs and illustrated quick guides help
+        avoid dependence on a single “expert,” consistent with local gardening practice and regional adaptation
+        frameworks (Australian Institute of Aboriginal and Torres Strait Islander Studies, 2016; Torres Strait Regional
+        Authority, 2011, 2016).</p>
+
+      <h3>Cultural Fit and Acceptance</h3>
+      <p>At least <strong>70%</strong> of weekly produce comprises locally preferred leafy greens and herbs, with
+        <strong>small-batch, weekly</strong> delivery minimizing storage loss and flavor degradation. Training materials
+        and on-site signage use plain language with visual design and bilingual options where requested (Australian
+        Institute of Aboriginal and Torres Strait Islander Studies, 2016; Queensland Government, n.d.). Adoption is
+        tracked via target-household coverage, user satisfaction, and recommendation-adoption rate, with
+        <strong>quarterly adjustments</strong>; feedback is translated into concrete improvements so the system evolves
+        with the community and gains genuine local ownership (Torres Strait Island Regional Council, 2025a; Engineers
+        Without Borders Australia, 2025).</p>
+    </section>
+
+    <section id="concerns-responses">
+      <h2>Community Concerns &amp; Responses</h2>
+
+      <h3>Does this system produce wastewater or harm the environment?</h3>
+      <p>The system operates in a closed-loop mode, so no nutrients are discharged during normal operation. Minimal
+        wastewater from routine maintenance is first filtered/sedimented and preferentially reused—never discharged
+        directly into the intertidal zone. Site layout and drainage follow TSIRC's coastal hazard adaptation guidance
+        and regional datasets, avoiding flood-prone/erosion areas (Torres Strait Island Regional Council, 2024; eAtlas,
+        2016/2024). Any exceptional discharge event is documented, reviewed, and parameters adjusted to ensure zero
+        visible impact on shoreline and wetlands (Torres Strait Regional Authority, 2011, 2016).</p>
+
+      <h3>Is the site sufficiently spacious and safe (tides/storm surges)?</h3>
+      <p>We prioritize existing hardened platforms or elevatable sites outside astronomical-tide and storm-surge
+        influence. Equipment is securely anchored; overflow is routed back to storage; splash-proof shading reduces heat
+        and salt-spray exposure (Torres Strait Island Regional Council, 2024). Final positioning and elevation are based
+        on island topography, tidal curves, and historical inundation records. Where necessary, nearby station data are
+        used to validate evaporation rates and shade design (eAtlas, 2016/2024; Bureau of Meteorology, 2025).</p>
+
+      <h3>How will these claims be verified?</h3>
+      <p>From day one, four KPIs are continuously updated and published: <strong>weekly output (kg)</strong>,
+        <strong>water consumption (L/kg)</strong>, <strong>energy consumption (kWh and kWh/kg)</strong>, and
+        <strong>household cost savings/adoption</strong>. Data are aggregated weekly/monthly, with quarterly disclosures
+        on TSIRC and community boards for public trend-tracking and verification. Methods and benchmarks follow TSIRC
+        reporting standards, with templates and tolerance bands aligned to community deployments to ensure long-term
+        consistency (Torres Strait Island Regional Council, 2025a, 2025b; Engineers Without Borders Australia, 2025).
+      </p>
+    </section>
+  </main>
